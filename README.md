@@ -6,7 +6,7 @@
 
 A comprehensive WordPress plugin for managing society memberships, registrations, email communications, and analytics.
 
-**Author:** Muhammad Samir
+**Author:** Muhammad Samir Alghannam
 
 ---
 
