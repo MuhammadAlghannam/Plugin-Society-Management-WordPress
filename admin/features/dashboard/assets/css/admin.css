@@ -1,0 +1,331 @@
+/**
+ * Dashboard Styles
+ * Full-width, clean, modern design
+ */
+
+.csi-admin-wrapper {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.csi-admin-wrapper h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #23282d;
+}
+
+/* Statistics Cards - Modern Design */
+.csi-stat-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border: 1px solid #e1e5e9;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    transition: all 0.3s ease;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    float: none !important;
+    display: block !important;
+}
+
+.csi-stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #2271b1 0%, #135e96 100%);
+}
+
+.csi-stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.csi-stat-card h3 {
+    margin: 0 0 12px 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #646970;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.csi-stat-card .stat-value {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1d2327;
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+}
+
+.csi-stat-card .stat-change {
+    font-size: 13px;
+    margin-top: 8px;
+    color: #646970;
+    font-weight: 500;
+}
+
+.csi-stat-card .stat-change.positive {
+    color: #00a32a;
+}
+
+.csi-stat-card .stat-change.positive::before {
+    content: '↑ ';
+    font-weight: 700;
+}
+
+.csi-stat-card .stat-change.negative {
+    color: #d63638;
+}
+
+.csi-stat-card .stat-change.negative::before {
+    content: '↓ ';
+    font-weight: 700;
+}
+
+/* Chart Cards - Clean Design */
+.csi-chart-card {
+    background: #ffffff;
+    border: 1px solid #e1e5e9;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.csi-chart-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.csi-chart-card .card-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid #e1e5e9;
+    background: #f8f9fa;
+}
+
+.csi-chart-card .card-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.csi-chart-card .card-body {
+    padding: 24px;
+    background: #ffffff;
+}
+
+/* Chart Canvas Styling */
+#membershipChart,
+#paymentChart,
+#trendsChart {
+    max-height: 350px;
+    position: relative;
+}
+
+/* Full Width Chart Container */
+.csi-chart-full {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+/* Recent Activity Table */
+#recent-activity-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+#recent-activity-table thead th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e1e5e9;
+    padding: 14px 20px;
+    font-weight: 600;
+    color: #1d2327;
+    text-align: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#recent-activity-table tbody td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #e1e5e9;
+    color: #50575e;
+    font-size: 14px;
+}
+
+#recent-activity-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+#recent-activity-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+#recent-activity-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Dashboard Grid Layout */
+.csi-dashboard-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.csi-dashboard-section {
+    margin-bottom: 30px;
+}
+
+.csi-dashboard-section-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1d2327;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e1e5e9;
+}
+
+/* Chart Grid Layout */
+.csi-charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+/* Time-based Stats Grid */
+.csi-time-stats-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Override WordPress default styles */
+.csi-admin-wrapper .wrap {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.csi-admin-wrapper * {
+    box-sizing: border-box;
+}
+
+/* Force grid layout and prevent float issues */
+.csi-dashboard-section {
+    clear: both;
+    width: 100%;
+    max-width: 100%;
+}
+
+.csi-dashboard-section>* {
+    float: none !important;
+    clear: none !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1600px) {
+    .csi-dashboard-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media (max-width: 1400px) {
+    .csi-dashboard-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .csi-time-stats-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .csi-charts-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .csi-dashboard-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .csi-admin-wrapper {
+        padding: 15px;
+    }
+
+    .csi-dashboard-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px;
+    }
+
+    .csi-charts-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    .csi-time-stats-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .csi-stat-card {
+        padding: 20px;
+    }
+
+    .csi-stat-card .stat-value {
+        font-size: 28px;
+    }
+
+    .csi-chart-card .card-body {
+        padding: 16px;
+    }
+
+    #membershipChart,
+    #paymentChart,
+    #trendsChart {
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .csi-admin-wrapper {
+        padding: 10px;
+    }
+
+    .csi-admin-wrapper h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .csi-stat-card {
+        padding: 16px;
+    }
+
+    .csi-stat-card .stat-value {
+        font-size: 24px;
+    }
+}

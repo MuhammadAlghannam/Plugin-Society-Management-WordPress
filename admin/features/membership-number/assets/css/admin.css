@@ -1,0 +1,140 @@
+/**
+ * Membership Number Settings Styles
+ */
+
+/* Modal z-index fixes for WordPress admin */
+.modal {
+    z-index: 100000 !important;
+}
+
+.modal-backdrop {
+    z-index: 99999 !important;
+}
+
+/* Modal content styling */
+.modal-content {
+    border-radius: 8px;
+}
+
+.modal-header {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-footer {
+    border-top: 1px solid #dee2e6;
+}
+
+/* Table styling */
+.widefat td {
+    vertical-align: middle;
+}
+
+.widefat th {
+    font-weight: 600;
+}
+
+/* Button spacing in table actions */
+.widefat td .button {
+    margin-right: 5px;
+}
+
+.widefat td form {
+    display: inline-block;
+    margin: 0;
+}
+
+/* Form elements in modals */
+.modal .form-control {
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+}
+
+.modal .form-label {
+    margin-bottom: 0.5rem;
+}
+
+/* Generate info text */
+#generate-info {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#generate-info > div {
+    background: #f8f9fa;
+    padding: 12px 15px;
+    border-radius: 4px;
+    border-left: 3px solid #0073aa;
+    line-height: 1.6;
+}
+
+/* Warning alert */
+.alert-warning {
+    background-color: #fff3cd;
+    border-color: #ffecb5;
+    color: #664d03;
+    padding: 12px 16px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+/* Loading spinner color */
+.spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+    border-width: 0.15em;
+}
+
+/* Top navigation buttons alignment */
+.tablenav.top {
+    margin-bottom: 15px;
+}
+
+.tablenav .alignright {
+    text-align: right;
+}
+
+/* Modal footer button spacing */
+.modal-footer form {
+    margin-left: 5px;
+}
+
+.modal-footer .btn {
+    margin-left: 5px;
+}
+
+.modal-footer .btn:first-child {
+    margin-left: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .modal-dialog {
+        margin: 10px;
+    }
+    
+    .tablenav .alignleft,
+    .tablenav .alignright {
+        float: none;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    
+    .widefat td .button,
+    .widefat td form {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .modal-footer form {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    .modal-footer .btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

@@ -1,0 +1,180 @@
+/**
+ * Global Admin Styles
+ * Shared styles across all admin pages
+ */
+
+/* CSI Plugin Admin Styles */
+.csi-admin-wrapper {
+  max-width: 100%;
+  width: 100%;
+  padding: 20px 30px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Statistics Cards */
+.csi-stat-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.csi-stat-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.csi-stat-card .stat-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #23282d;
+  margin: 0;
+}
+
+.csi-stat-card .stat-change {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.csi-stat-card .stat-change.positive {
+  color: #46b450;
+}
+
+.csi-stat-card .stat-change.negative {
+  color: #dc3232;
+}
+
+/* User Status Badges */
+.user-status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.user-status.status-active {
+  background: #d4edda;
+  color: #155724;
+}
+
+.user-status.status-not_active {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* Payment Status Badges */
+.payment-status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.payment-status.status-paid {
+  background: #d4edda;
+  color: #155724;
+}
+
+.payment-status.status-pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.payment-status.status-declined {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* Action Icons */
+.csi-action-icon {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0 3px;
+  cursor: pointer;
+  color: #666;
+}
+
+.csi-action-icon:hover {
+  color: #23282d;
+}
+
+.csi-action-icon .dashicons {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+}
+
+/* Clickable Table Rows */
+.csi-clickable-row {
+  cursor: pointer;
+}
+
+.csi-clickable-row:hover {
+  background-color: #f5f5f5;
+}
+
+/* Loading States */
+.csi-loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Notification Styles */
+.csi-notification {
+  margin: 5px 0;
+}
+
+/* Modal Styles */
+.csi-modal-lg {
+  max-width: 90%;
+}
+
+/* Form Styles */
+.csi-form-group {
+  margin-bottom: 1rem;
+}
+
+.csi-form-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Button Styles */
+.csi-btn-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* File Upload Preview */
+.csi-file-preview {
+  max-width: 150px;
+  max-height: 150px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .csi-admin-wrapper {
+    padding: 10px;
+  }
+
+  .csi-stat-card {
+    padding: 15px;
+  }
+}
