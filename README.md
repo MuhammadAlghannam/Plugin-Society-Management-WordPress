@@ -3,7 +3,6 @@
 [![Version](https://img.shields.io/badge/version-2.0-blue.svg)](https://github.com)
 [![WordPress](https://img.shields.io/badge/WordPress-5.0%2B-21759B?logo=wordpress)](https://wordpress.org/)
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-777BB4?logo=php)](https://php.net/)
-[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 
 A comprehensive WordPress plugin for managing society memberships, registrations, email communications, and analytics.
 
@@ -33,14 +32,14 @@ A comprehensive WordPress plugin for managing society memberships, registrations
 
 Society Management is a full-featured WordPress plugin for professional societies and membership organizations. It handles member registration, renewals, email templates with placeholders, automated reminders, analytics, and certificate generation—all from a single admin interface.
 
-| Capability | Description |
-|------------|-------------|
-| **Member registration** | Frontend forms for new and student registration with file uploads |
-| **Profile & renewal** | Member profile shortcode with certificate download and renewal flow |
-| **Analytics** | Dashboard with Chart.js stats, payment breakdown, and trends |
-| **Email system** | Templates, placeholders, SMTP, bulk send, and 11‑month reminders |
-| **Membership IDs** | Configurable abbreviations and auto-generated membership numbers |
-| **Data** | CSV import/export, membership history, and automatic expiry handling |
+| Capability              | Description                                                          |
+| ----------------------- | -------------------------------------------------------------------- |
+| **Member registration** | Frontend forms for new and student registration with file uploads    |
+| **Profile & renewal**   | Member profile shortcode with certificate download and renewal flow  |
+| **Analytics**           | Dashboard with Chart.js stats, payment breakdown, and trends         |
+| **Email system**        | Templates, placeholders, SMTP, bulk send, and 11‑month reminders     |
+| **Membership IDs**      | Configurable abbreviations and auto-generated membership numbers     |
+| **Data**                | CSV import/export, membership history, and automatic expiry handling |
 
 ---
 
@@ -138,22 +137,22 @@ Society Management is a full-featured WordPress plugin for professional societie
 
 ## Shortcodes
 
-| Shortcode | Purpose |
-|-----------|---------|
-| `[custom_signup]` | Membership registration form (new + student). |
-| `[profile_info]` | Logged-in user’s profile, certificate download, and renewal. |
+| Shortcode         | Purpose                                                      |
+| ----------------- | ------------------------------------------------------------ |
+| `[custom_signup]` | Membership registration form (new + student).                |
+| `[profile_info]`  | Logged-in user’s profile, certificate download, and renewal. |
 
 ---
 
 ## Admin
 
-| Menu | Description |
-|------|-------------|
-| **Dashboard** | Analytics, charts, recent registrations. |
+| Menu                        | Description                                                       |
+| --------------------------- | ----------------------------------------------------------------- |
+| **Dashboard**               | Analytics, charts, recent registrations.                          |
 | **Membership Applications** | User list, filters, profile modal, CSV import/export, bulk email. |
-| **Generated ID Settings** | Membership number abbreviations and generation. |
-| **Email Templates** | Create/edit templates, placeholders, send single/bulk. |
-| **Settings** | SMTP and reminder/renewal template selection. |
+| **Generated ID Settings**   | Membership number abbreviations and generation.                   |
+| **Email Templates**         | Create/edit templates, placeholders, send single/bulk.            |
+| **Settings**                | SMTP and reminder/renewal template selection.                     |
 
 ---
 
@@ -161,11 +160,11 @@ Society Management is a full-featured WordPress plugin for professional societie
 
 The plugin uses these tables (prefix `wp_` as per your install):
 
-| Table | Purpose |
-|-------|---------|
-| `wp_csi_membership_numbers` | Membership number settings per type (replaces `wp_csi_generated_ids` in 2.0). |
-| `wp_csi_email_templates` | Email template name, from, subject, body, placeholders, active flag. |
-| `wp_csi_email_reminders` | Reminder log: user, template, type, sent_at, status. |
+| Table                       | Purpose                                                                          |
+| --------------------------- | -------------------------------------------------------------------------------- |
+| `wp_csi_membership_numbers` | Membership number settings per type (replaces `wp_csi_generated_ids` in 2.0).    |
+| `wp_csi_email_templates`    | Email template name, from, subject, body, placeholders, active flag.             |
+| `wp_csi_email_reminders`    | Reminder log: user, template, type, sent_at, status.                             |
 | `wp_csi_membership_history` | Event log: registration, renewal, status/payment changes, reminder sent, expiry. |
 
 ---
@@ -200,8 +199,8 @@ custom-signup-plugin/
 
 ### Constants
 
-- `CSI_VERSION` — Plugin version  
-- `CSI_PLUGIN_DIR` / `CSI_PLUGIN_URL` / `CSI_PLUGIN_BASENAME` — Paths and basename  
+- `CSI_VERSION` — Plugin version
+- `CSI_PLUGIN_DIR` / `CSI_PLUGIN_URL` / `CSI_PLUGIN_BASENAME` — Paths and basename
 
 ### Global JS (`CSI`)
 
